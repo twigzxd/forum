@@ -38,10 +38,10 @@ const routes :Routes = [
     path:'statusCard',
     component:StatusCardComponent
   },
-    // {
-    //   path:"**",
-    //   component:PageNotFoundComponent
-    // }
+  {
+    path:"**",
+    component:PageNotFoundComponent
+  }
     
 ];
 
