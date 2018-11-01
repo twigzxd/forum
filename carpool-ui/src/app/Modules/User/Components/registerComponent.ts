@@ -7,7 +7,7 @@ import {UserServiceService} from '../user-service.service';
   templateUrl: './registerComponent.html'
 })
 
-export class RegisterComponent implements OnInit{
+export class RegisterComponent {
 
   public model: any = {};
 
@@ -15,7 +15,6 @@ export class RegisterComponent implements OnInit{
     private userServiceService: UserServiceService
   ){}
 
-  ngOnInit(){}
 
   register() {
 

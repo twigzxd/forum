@@ -1,6 +1,10 @@
 import { Router } from "@angular/router";
+import {Component} from '@angular/core';
 
-
+@Component({
+    templateUrl: './main.component.html',
+    styleUrls:['./main.component.css']
+})
 
 export class MainComponent{
 
@@ -8,7 +12,7 @@ export class MainComponent{
         private router: Router
     ){}
     gotoCarpool(){
-        this.router.navigateByUrl('');
+        this.router.navigateByUrl('offer_want');
     }
 
     // gotoGraduateCheck(){

@@ -4,11 +4,10 @@ import {HttpClientModule} from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 
-import { UserModule } from './Modules/User/userModule';
+// import { UserModule } from './Modules/User/userModule';
 import {PostModule} from './Modules/Post/postModule'
 // import { UserService } from './Modules/User/services';
-import { RouterModule, Routes } from '@angular/router';
-import { PageNotFoundComponent } from './Modules/PageNotFound/PageNotFound.component';
+import { RouterModule, Routes } from '@angular/router'
 // import { RoutingComponents } from './Modules/Post/RoutingModule';
 
 const routes: Routes = [
