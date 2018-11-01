@@ -6,25 +6,30 @@ import {PostComponent } from './Components/post.component';
 import {StatusCardComponent} from "./Components/statusCard.component";
 import {PageNotFoundComponent} from "../PageNotFound/PageNotFound.component";
 import { EmptyComponent } from './Components/empty.component';
+import { MainComponent } from '../main/main.component';
 
 const routes :Routes = [
-    // { 
-    //   path:'',
-    //   redirectTo: 'carpoolPost',
-    //   pathMatch:'full'
-    // },
-    {
-      path:'carpoolPost',
-      component:CarpoolOfferComponent
-    },
-    {
-      path: 'post', 
-      component:PostComponent
-    },
-    {
-      path:'statusCard',
-      component:StatusCardComponent
-    },
+  { 
+    path:'',
+    redirectTo:'main',
+    pathMatch: 'full' 
+  },
+  { 
+    path:'main',
+    component:MainComponent
+  },
+  {
+    path:'carpoolPost',
+    component:CarpoolOfferComponent
+  },
+  {
+    path: 'post', 
+    component:PostComponent
+  },
+  {
+    path:'statusCard',
+    component:StatusCardComponent
+  },
     // {
     //   path:"**",
     //   component:PageNotFoundComponent
@@ -40,6 +45,7 @@ const routes :Routes = [
 export class RoutingPostModule{}
 export const RoutingComponents =[
                                   EmptyComponent,
+                                  MainComponent,
                                   CarpoolOfferComponent,
                                   PostComponent,
                                   StatusCardComponent,

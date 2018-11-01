@@ -10,7 +10,7 @@ export class PostComponent implements OnInit {
   constructor(
     private PostService: PostService,
     private router: Router
-){}
+  ){}
 
   ngOnInit() {
   }
