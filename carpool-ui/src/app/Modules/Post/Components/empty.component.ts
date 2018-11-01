@@ -7,10 +7,7 @@ import { Router } from '@angular/router';
 })
 export class EmptyComponent implements OnInit {
 
-  constructor(
-    private PostService: PostService,
-    private router: Router
-  ){}
+  constructor(){}
 
   ngOnInit() {
   }

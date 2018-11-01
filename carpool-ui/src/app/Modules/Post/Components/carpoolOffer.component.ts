@@ -14,8 +14,7 @@ export class CarpoolOfferComponent{
     
 
     constructor(
-        private PostService: PostService,
-        private router: Router
+        private PostService: PostService
     ){}
 
     public payload: any = {};
