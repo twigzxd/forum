@@ -4,7 +4,7 @@ import {HttpClientModule} from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 
-// import { UserModule } from './Modules/User/userModule';
+import { UserModule } from './Modules/User/userModule';
 import {PostModule} from './Modules/Post/postModule'
 // import { UserService } from './Modules/User/services';
 import { RouterModule, Routes } from '@angular/router'
@@ -13,7 +13,12 @@ import { RouterModule, Routes } from '@angular/router'
 const routes: Routes = [
   {
     path: '',
-    // loadChildren: () => UserModule
+    loadChildren: () => UserModule
+
+    
+  },
+  {
+    path:'PostModule',
     loadChildren: () => PostModule
     
   }
@@ -22,7 +27,7 @@ const routes: Routes = [
 @NgModule({
   imports: [
     BrowserModule,
-    // UserModule,
+    UserModule,
     PostModule,
     HttpClientModule,
     RouterModule.forRoot(routes)
