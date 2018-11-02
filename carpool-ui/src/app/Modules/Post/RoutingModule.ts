@@ -3,10 +3,9 @@ import { RouterModule, Routes } from '@angular/router';
 
 //Components
 import {CarpoolOfferComponent} from "./Components/carpoolOffer.component";
-import {PostComponent } from './Components/post.component';
+import {CarpoolCalenderComponent } from './Components/carpoolCalender.component';
 import {StatusCardComponent} from "./Components/statusCard.component";
 import {PageNotFoundComponent} from "../PageNotFound/PageNotFound.component";
-import { EmptyComponent } from './Components/empty.component';
 import { MainComponent } from '../main/main.component';
 import { OfferWantComponent} from '../main/offer_want.component'
 
@@ -31,8 +30,8 @@ const routes :Routes = [
     component:CarpoolOfferComponent
   },
   {
-    path: 'post', 
-    component:PostComponent
+    path: 'carpoolCalender', 
+    component:CarpoolCalenderComponent
   },
   {
     path:'statusCard',
@@ -55,8 +54,7 @@ export const RoutingComponents =[
                                   MainComponent,
                                   OfferWantComponent,
                                   CarpoolOfferComponent,
-                                  PostComponent,
+                                  CarpoolCalenderComponent,
                                   StatusCardComponent,
-                                  EmptyComponent,
                                   PageNotFoundComponent
                                 ]

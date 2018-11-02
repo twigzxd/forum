@@ -6,21 +6,16 @@ import { AppComponent } from './app.component';
 
 import { UserModule } from './Modules/User/userModule';
 import {PostModule} from './Modules/Post/postModule'
-// import { UserService } from './Modules/User/services';
 import { RouterModule, Routes } from '@angular/router'
-// import { RoutingComponents } from './Modules/Post/RoutingModule';
 
 const routes: Routes = [
   {
-    path: '',
+    path: 'User',
     loadChildren: () => UserModule
-
-    
   },
   {
-    path:'PostModule',
+    path: 'Post',
     loadChildren: () => PostModule
-    
   }
 ];
 
@@ -34,7 +29,6 @@ const routes: Routes = [
   ],
   declarations: [
     AppComponent
-    // RoutingComponents
   ],
   providers: [],
   bootstrap: [AppComponent]
