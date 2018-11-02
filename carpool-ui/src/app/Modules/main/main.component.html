@@ -2,20 +2,20 @@
 <div class="container">
 
   <!-- Carpool Button  -->
-  <div class="card1" >
+  <div class="card1" routerLink="/offer_want" routerLinkActive="active">
     <div class="top-section">
       <div class="avatar">
         <img class="img-bus" src="../assets/img/public_transport@2x.png" alt="Carpool">
       </div>
     </div>
     <div class="bot-section">
-      <button routerLink="/offer_want" routerLinkActive="active" class="carpool">
+      <h6 class="carpool">
         Carpool
-      </button>
+      </h6>
     </div>
   </div>
   <!-- GraduateCheck Button  --> 
-  <div class="card2" >
+  <div class="card2" routerLink="/graduatecheck" routerLinkActive="active">
     <div class="top-section">
       <div class="avatar">
         <img class="img-bus" src="../assets/img/public_transport@2x.png" alt="Carpool">
@@ -23,18 +23,22 @@
     </div>
 
     <div class="bot-section">
-      <button class="carpool" (click)="gotoGraduateCheck" >GraduateCheck</button>
+      <h6 class="carpool"  >
+        GraduateCheck
+      </h6>
     </div>
   </div>
   <!-- UsedCar Button  -->
-    <div class="card3" >
+    <div class="card3" routerLink="/usedcar" routerLinkActive="active">
       <div class="top-section">
         <div class="avatar">
           <img class="img-bus" src="../assets/img/public_transport@2x.png" alt="Carpool">
         </div>
       </div>
       <div class="bot-section">
-        <button class="carpool" (click)="gotoUsedCar" >UsedCar</button>
+        <h6 class="carpool"  >
+            UsedCar
+          </h6>
       </div>
     </div>
   </div>
